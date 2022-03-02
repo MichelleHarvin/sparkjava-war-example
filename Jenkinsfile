@@ -7,6 +7,10 @@ pipeline {
           echo "Do something"
           pwd
           uname
+          docker ps
+          echo "Do something"
+          mvn clean install
+          '''
       }
     }
     stage ('test') {
