@@ -21,7 +21,7 @@ pipeline {
     stage('deploy') {
       steps{
           sh '''
-           docker cp ./sparkjava-hello-world-1.0.war tomcat://usr/local/tomcat/webapps
+           docker cp /sparkjava-hello-world-1.0.war tomcat://usr/local/tomcat/webapps
           '''
       }
     }
